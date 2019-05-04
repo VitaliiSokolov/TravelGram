@@ -26,6 +26,7 @@ body {
 }
 /*STYLING HEADER_BLOCK*/
 header {
+    z-index: 317;
     height: 314px;
     display: flex;
     flex-grow: 0;
@@ -203,7 +204,6 @@ input {
 i {
     text-align: center;
     position: relative;
-    top: 4px;
 }
 
 .facebook {
@@ -261,24 +261,62 @@ i {
     justify-content: center;
 }
 
-.slider {
-    width: 1920px;
+.slider-top {
+    position: absolute;
+    width: 100%;
     height: 890px;
-    z-index: 316;
-    background-image: url("../images/slider.png");
+    z-index: 31;
+    background: url("../images/upperlayer-slider.png") , url("../images/slider.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: 0px;
+    background-position-y: -40px;
     display: flex; 
     flex-direction: column;
     justify-content: center;
 }
 
+.traveling {
+    width: 270px;
+    height: 50px;
+    position: absolute;
+    top: 152px;
+    left: 40px;
+}
   
+.featured-blog {
+    border: solid red 1px;
+    width: 140px;
+    height: 37px;
+    position: absolute;
+    top: 513px;
+    left: 38px;
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.067;
+    text-align: center;
+    z-index: 322;
+}
 
+.angles {
+    position: absolute;
+    top: 570px;
+    left: 38px;
+    width: 48px;
+    height: 100px;
+}
 
+.upper-angle {
+    border: solid #ffffff 1px;
+    width: 43px;
+    height: 43px;
+}
 
-
-
+.down-angle {
+    border: solid #ffffff 1px;
+    width: 43px;
+    height: 43px;
+}
 
 
 
@@ -286,16 +324,8 @@ i {
 
 /*STYLING FOOTER_BLOCK*/
 footer {
+    width: 100%;
     background-color: yellow;
     flex-grow: 1;
     text-align: center;
 }
-
-.bg {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: 2;
-  }
-  
