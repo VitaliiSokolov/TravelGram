@@ -506,17 +506,20 @@ i {
     height: 100vh;
     display: flex;
     flex-direction: row;
+    margin: auto;
 }
 
 /* SIDEBAR*/
 .sidebar {
     background-color: #ffffff;
-    display: flex;
-    height: 4360px;
+    display: flex;    
+    height: 2000px;
+   /* height: 4360px; */
     width: 630px;
     flex-grow: 1;
     flex-direction: column;    
     flex-shrink: 2;
+    margin: 39px auto;
 }
 
 .map-block {
@@ -554,8 +557,9 @@ i {
 .blog-content {
     background-color: antiquewhite;
     display: flex;
-    height: 4360px;
-    flex-grow: 2;
+    height: 2000px;
+   /* height: 4360px; */
+    flex-grow: 8;
     flex-shrink: 2;
 }
 
