@@ -2,14 +2,47 @@
 }
 
 @font-face {
-    font-family: "MyriadProSemiBold";
-    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
-    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
-    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-family: "Zurich BlkEx BT Black";
+    src: url("../fonts/Zurich\ BlkEx\ BT\ Black.ttf");
     font-style: normal;
     font-weight: normal;
 }
+
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url("../fonts/Myriad\ Pro\ Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MyriadPro-Semibold";
+    src: url("../fonts/MyriadPro-Semibold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/FontAwesome.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Dosis-SemiBold";
+    src: url("../fonts/Dosis-SemiBold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Merriweather-LightItalic";
+    src: url("../fonts/Merriweather-LightItalic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -42,8 +75,6 @@ header {
 }
 /*Search-Block*/
 .search {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    font-size: 14px;
     display: flex; 
     flex-direction: row;
     flex-grow: 1;
@@ -52,14 +83,17 @@ header {
 .input-form {
     margin: auto;
     display: inline-block;
-    border: none;
+    border: none;    
+    
 }
 
 input {
     height: 100%;
-    width: 70%;
+    width: 85%;
     z-index: 1;
     border: none;
+    font-family: 'Merriweather-LightItalic';
+    font-size: 14px;
 }
 
 .input-icon {
@@ -71,12 +105,13 @@ input {
     background-position: center;
 }
 
-.input-icon i {
+.input-icon a {
     font-family: fontawesome;
     font-size: 15px;
     color:gray;
     text-decoration: none;
 }
+
 /*Central-LOGOTIP*/
 .logo {
     flex-grow: 1; 
@@ -118,7 +153,16 @@ input {
     text-align: center;
     flex-direction: row;
     width: 151px;
-    height: 28px;
+    height: 40px;    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Dosis-SemiBold';
+    font-size: 14px;
+}
+
+.subscribe p {
+    text-align: center;
+    position: relative;
 }
 
 .upper-line {
@@ -148,12 +192,14 @@ input {
 }
 .nav {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 2;
     justify-content: space-around;
     align-items: center;
 }
 
 .nav-link {
+    font-size: 16px;
+    font-family: 'MyriadPro-Semibold';
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -191,12 +237,10 @@ input {
     justify-content: center;
 }
 
-.social a i {
+.social  i {
     display: flex;
-    height: 25px;
-    width: 25px;    
-    font-family: fontawesome;
-    font-size: 15px;
+    font-family: 'FontAwesome';
+    font-size: 14px;
     text-decoration: none;   
     align-content: space-between; 
 }
@@ -261,6 +305,14 @@ i {
     justify-content: center;
 }
 
+.all {
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+/*SLIDER BLOCK*/
 .slider-top {
     position: absolute;
     width: 100%;
@@ -284,17 +336,16 @@ i {
 }
   
 .featured-blog {
-    border: solid red 1px;
     width: 140px;
     height: 37px;
     position: absolute;
     top: 513px;
     left: 38px;
     font-size: 18px;
-    font-family: "Myriad Pro";
+    font-family: 'MyriadPro-Semibold';
     color: rgb(255, 255, 255);
     line-height: 1.067;
-    text-align: center;
+    text-align: left;
     z-index: 322;
 }
 
@@ -302,8 +353,8 @@ i {
     position: absolute;
     top: 570px;
     left: 38px;
-    width: 48px;
-    height: 100px;
+    width: 45px;
+    height: 90px;
 }
 
 .upper-angle {
@@ -312,20 +363,133 @@ i {
     height: 43px;
 }
 
+.upper-angle:hover {
+    background-color: #e21712;
+}
+
+.fa-angle-up {
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    color: #fff; 
+    text-align: center;
+    top: 5px;
+    width: 43px;
+    height: 43px;
+}
+
+
 .down-angle {
     border: solid #ffffff 1px;
     width: 43px;
     height: 43px;
 }
 
+.fa-angle-down {
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    color: #fff; 
+    text-align: center;
+    top: 10px;
+}
 
+.down-angle:hover {
+    background-color: #e21712;
+}
 
+.slider-header {
+    width: 480px;
+    height: 48px;
+    position: absolute;
+    top: 560px;
+    left: 70px;
+}  
+
+.slider-header p{
+    font-family: 'Zurich BlkEx BT Black';
+    font-size: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 44px;
+    margin: auto;
+    color: #fff;
+}
+
+.slider-text {
+    color: #fff;
+    width: 517px;
+    height: 52px;
+    position: absolute;
+    top: 610px;
+    left: 110px;
+}
+
+.slider-text p {
+    font-family: 'Myriad Pro Regular';
+    font-size: 15px;
+    margin: auto;
+    text-align: left;
+}
+
+.explore-button {
+    width: 150px;
+    height: 46px;
+    position: absolute;
+    top: 690px;
+    left: 110px;
+}
+
+.explore-button a {
+    width: 150px;
+    height: 46px;
+}
+
+.slider-paths {
+    opacity: 30%;
+    width: 65px;
+    height: 15px;    
+    position: absolute;
+    top: 770px;
+    left: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle {
+    height: 10px;
+    width: 9px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.circle:hover{
+    width: 7px;
+    height: 8px;
+    border: solid 1px #fff;
+    background-color: black;
+    
+}
+
+.black {
+    background-color: black;
+    border: solid 1px #fff;
+    width: 7px;
+    height: 8px;
+}
+
+.circle:hover ~ .black {
+    background-color: white;
+}
+
+/*.black:hover ~ .circle {
+    background-color: black;
+}*/
 
 
 /*STYLING FOOTER_BLOCK*/
 footer {
     width: 100%;
     background-color: yellow;
-    flex-grow: 1;
+    flex-grow: 0;
     text-align: center;
 }
