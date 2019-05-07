@@ -44,8 +44,6 @@
 }
 
 body {
-    width: 100%;
-    height: 100vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -54,7 +52,7 @@ body {
     background-color: rgb(255, 255, 255);
     position: absolute;
     width: 100%;
-    height: 7407px;
+    /*height: 7407px;*/
     z-index: 2;
 }
 /*STYLING HEADER_BLOCK*/
@@ -306,7 +304,7 @@ i {
 }
 
 .all {
-    background-color: aqua;
+    background-color: wheat;
     width: 100%;
     display: flex;
     flex-grow: 1;
@@ -376,7 +374,6 @@ i {
     width: 43px;
     height: 43px;
 }
-
 
 .down-angle {
     border: solid #ffffff 1px;
@@ -484,6 +481,37 @@ i {
 /*.black:hover ~ .circle {
     background-color: black;
 }*/
+
+/* full middle path of website*/
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+    display: flex;
+}
+
+/* SIDEBAR*/
+.sidebar {
+    background-color: pink;
+    display: flex;
+    width: 100%;
+
+}
+
+
+
+
+/*BLOG-CONTENT*/
+.blog-content {
+    background-color: blue;
+    display: flex;
+    width: 100%;
+}
+
+
+
+
 
 
 /*STYLING FOOTER_BLOCK*/
