@@ -518,6 +518,9 @@ i {
     width: 630px;
     flex-grow: 1;
     flex-direction: column;    
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     flex-shrink: 2;
     margin: 39px auto;
 }
@@ -538,11 +541,8 @@ i {
     height: 102px;
     background: url(../images/where\ i\ am.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-color: #e1e1e1;
 }
-
-
 
 .map {
     width: 562px;
@@ -552,6 +552,34 @@ i {
     background-position: center;
     background-color: #e1e1e1;
 }
+
+.about-me {    
+    background-color: №ffffff;
+    width: 606px;
+    height: 896px;
+    box-shadow: 0px 11px 15.84px 2.16px rgba(0, 0, 0, 0.33);
+}
+
+.aboutme-header {
+    width: 606px;
+    height: 403px;
+    background: url(../images/aboutme.png);
+}
+
+.aboutme-photo {
+    width: 606px;
+    height: 492px;
+    background: url(../images/aboutme-photo.png);
+}
+
+.aboutme-text {
+    width: 477px;
+    height: 244px;
+    font-size: 16px;
+    font-family: 'Myriad Pro Regular';
+    text-align: center;
+}
+
 
 /*BLOG-CONTENT*/
 .blog-content {
@@ -563,10 +591,6 @@ i {
     flex-shrink: 2;
 }
 
-.about-me {
-    width: 606px;
-    height: 917px;
-}
 
 
 
